@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Testing Lang Gud — Story to Philosophy</title>
+<style>
+:root{--bg:#f4f1fb;--card:#ffffff;--ink:#1c1630;--mute:#5d5675;--line:#ddd6ee;--soft:#ece7f8;--h:270;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0b1a;--card:#1a1428;--ink:#f3eefc;--mute:#b2a8cc;--line:#32284b;--soft:#251d3a}}
+:root[data-theme="dark"]{--bg:#0f0b1a;--card:#1a1428;--ink:#f3eefc;--mute:#b2a8cc;--line:#32284b;--soft:#251d3a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.55}
+main{max-width:860px;margin:0 auto;padding:22px 16px 56px}
+.hero h1{font-size:34px;line-height:1.05;margin:0;letter-spacing:-.02em}
+.hero h1 span{background:linear-gradient(90deg,hsl(var(--h) 85% 62%),hsl(calc(var(--h) + 60) 85% 62%));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);margin:6px 0 14px}
+.tabs,.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0;scrollbar-width:none}
+.tab,.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 15px;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.tab[aria-current="true"],.chip[aria-current="true"]{background:hsl(var(--h) 70% 52%);border-color:transparent;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:10px}
+.tile{text-align:left;background:var(--card);border:1px solid var(--line);border-top:5px solid hsl(var(--t) 75% 58%);border-radius:18px;padding:14px;cursor:pointer;color:var(--ink);font:inherit}
+.tile .n{font-size:13px;font-weight:800;color:hsl(var(--t) 70% 58%);letter-spacing:.08em}
+.tile .e{font-size:30px;margin:2px 0}.tile b{display:block;font-size:17px;line-height:1.25}
+.tile small{display:block;color:var(--mute);margin-top:6px;font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;margin-top:10px}
+.k{font-size:13px;font-weight:800;letter-spacing:.08em;color:hsl(var(--h) 75% 62%);text-transform:uppercase}
+h2{font-size:28px;line-height:1.15;margin:4px 0 14px}
+.bridge{display:flex;gap:8px;align-items:stretch;margin-bottom:16px}
+.bn{flex:1;background:var(--soft);border-radius:16px;padding:12px 6px;text-align:center}
+.bn .e{font-size:42px;line-height:1.1}.bn p{margin:4px 0 0;font-size:12px;font-weight:800;color:var(--mute);letter-spacing:.06em}
+.ar{align-self:center;font-weight:800;font-size:22px;color:hsl(var(--h) 75% 62%)}
+.quote{margin:0 0 6px;padding:14px 16px;border-left:6px solid hsl(var(--h) 75% 58%);background:var(--soft);border-radius:10px;font-size:19px;font-weight:700}
+.sec{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.sec h3{margin:0 0 4px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:hsl(var(--h) 75% 62%)}
+.sec p{margin:0}
+.tag{display:inline-block;background:hsl(var(--h) 60% 45%);color:#fff;border-radius:999px;padding:3px 12px;font-weight:700;font-size:13px;margin:0 4px 4px 0}
+.th{background:var(--soft);border-radius:12px;padding:10px 12px;margin-top:8px}
+.try{background:hsl(var(--h) 70% 52%);color:#fff;border-radius:16px;padding:14px 16px;margin-top:16px;font-weight:600}
+.nav{display:flex;gap:10px;margin-top:14px}
+.nav button{flex:1;padding:12px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.nav button:disabled{opacity:.35}
+.prog{height:6px;background:var(--soft);border-radius:9px;margin-top:6px;overflow:hidden}.prog i{display:block;height:100%;background:hsl(var(--h) 75% 58%)}
+.wrap{overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+table{border-collapse:collapse;min-width:620px;width:100%;font-size:15px}
+th{background:hsl(var(--h) 55% 40%);color:#fff;text-align:left;padding:10px;font-size:14px}
+td{padding:10px;border-top:1px solid var(--line);vertical-align:top}
+.note{color:var(--mute);font-size:13px;margin-top:18px}
+</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2b1d14"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Testing Lang Gud"></head><body><main>
+<a href="index.html" style="display:inline-block;margin:0 0 10px;color:var(--mute);font-weight:700;text-decoration:none">← Back to the Story</a><div class="hero"><h1>Testing Lang Gud:<br><span>how a story becomes philosophy</span></h1>
+<p class="sub">Follow Emilio. Each chapter turns one real-life moment into one big idea, so you can feel it before you define it.</p></div>
+<div class="tabs" id="tabs"></div><div class="chips" id="chips"></div><div id="view"></div>
+<p class="note">Teacher’s note: only “I–It / I–You” (Ch. 9) is named in the story, and the thinker behind it goes unnamed. The other links are an interpretive reading for class discussion. Story lines are English renderings of the original Filipino/Cebuano. Check IPHP topic names against your curriculum guide.</p>
+</main>
+<script>
+var P={"Gabriel Marcel":"You don’t just have a body, you are embodied. Hope is trust that holds even when outcomes are unknown. Life is a mystery to live, not a problem to solve.",
+"Maurice Merleau-Ponty":"The body is how we inhabit the world, not just a tool we use.",
+"Jean-Paul Sartre":"Existence comes before essence: you are not defined in advance, you define yourself through choices. We are “condemned to be free.”",
+"Aristotle":"Potential becomes actual through action. Virtue is the right middle between extremes. Eudaimonia means flourishing through character.",
+"Søren Kierkegaard":"Anxiety is the dizziness of freedom. Real commitment is a leap, not a calculation.",
+"Emmanuel Levinas":"The face of another person calls you to responsibility before you decide anything.",
+"Paul Tillich":"Courage is affirming who you are despite fear.",
+"Socrates":"Wisdom begins by admitting what you don’t know, then questioning.",
+"Virgilio Enriquez":"Kapwa means “shared self.” Filipino identity is built through relationships.",
+"Karl Marx":"Alienation: people become separated from their work, from each other and from themselves.",
+"Martin Heidegger":"We drift into “the They,” the anonymous crowd. Dwelling means caring for things so they can flourish.",
+"Martin Buber":"I–It treats others as objects to use. I–You meets them as whole persons.",
+"Aldo Leopold":"Land is a community to respect, not property to exploit.",
+"Hannah Arendt":"Forgiveness frees us from the past. Natality: every person can begin something new.",
+"Viktor Frankl":"We don’t ask life for meaning. Life asks us, and we answer through responsibility."};
+var CH=[
+{t:"The Dust of San Isidro",h:30,v:["🥾","🧍","👑"],ph:"Existentialism and Embodiment",top:"Human Person as Embodied Spirit",who:["Gabriel Marcel","Maurice Merleau-Ponty","Jean-Paul Sartre"],line:"The dust on his shoes does not define his tomorrow.",ev:"Emilio walks 5 km to school every day with a worn bag, tired legs and a test on his mind.",qn:"Am I just my circumstances?",idea:"Sartre says existence comes first and you then define yourself by your choices. Marcel and Merleau-Ponty add that you don’t merely have a body, you are your body.",rat:"The dust, hunger and tiredness are facts of life Emilio did not choose. Sartre calls these facticity. Yet he keeps walking. The story shows a body that is limited and still reaching beyond its limits.",tr:"List 3 facts about your life you didn’t choose. Next to each, write 1 choice you can still make."},
+{t:"The Seed and the Pencil",h:130,v:["🌽","🌱","🌳"],ph:"Philosophy of Hope",top:"Transcendence",who:["Gabriel Marcel","Aristotle"],line:"If you planted, there is hope.",ev:"Grandpa Piro teaches Emilio to plant without any promise of harvest, and gives him a short pencil.",qn:"Why act when the result is uncertain?",idea:"Aristotle: a seed is potential waiting to become actual. Marcel: hope is not “it’ll be fine.” It is trust that stays when you can’t predict.",rat:"The seed stands for potential. The pencil stands for authorship, because you can still write what comes next. Planting is the act that turns “maybe” into “might.”",tr:"What is one seed you are planting this year with no guarantee?"},
+{t:"The Wind of Worry",h:270,v:["😂","⚖️","🧘🏽"],ph:"Existentialism: Anxiety and Choice",top:"Freedom of the Human Person",who:["Søren Kierkegaard","Jean-Paul Sartre"],line:"It’s just a test. If I fail now, I’ll do it again.",ev:"Marco mocks Emilio’s project. Emilio stays calm and answers with “testing lang.”",qn:"Does anxiety mean I should quit?",idea:"Kierkegaard: anxiety is the dizziness you feel when you realize you could choose differently. Sartre: even not choosing is a choice.",rat:"Emilio’s worry proves the outcome is still open, which is what freedom feels like. Marco pushes him to quit, but Emilio reframes failure as an experiment and turns anxiety into action.",tr:"Recall a time fear showed you something mattered. What did you do?"},
+{t:"Trial by Fire",h:12,v:["🔥","🫶🏽","🏃🏽"],ph:"Virtue Ethics and Existential Courage",top:"Freedom: Moral Choice",who:["Aristotle","Emmanuel Levinas","Paul Tillich"],line:"Courage is stepping forward even when your knees tremble.",ev:"A house burns and no one dares enter. Emilio runs in, saves a child, and the village helps.",qn:"What is courage, really?",idea:"Aristotle: courage sits between cowardice and recklessness and is built by acting. Levinas: another person’s face calls you to responsibility. Tillich: courage is affirming yourself despite fear.",rat:"Emilio isn’t fearless. He is moved by the child’s need. The story separates courage from the absence of fear and shows it as a response to a person in need.",tr:"When did you do the right thing while scared?"},
+{t:"The Quiet of Recognition",h:195,v:["🍞","🤲🏽","💡"],ph:"Socratic Wisdom",top:"Doing Philosophy",who:["Socrates","Gabriel Marcel"],line:"I don’t know yet. But I can still learn.",ev:"After the fire the neighbors thank him. Half of the cornfield is gone, and he doesn’t regret his choice.",qn:"What do I actually know?",idea:"Socrates: wisdom begins when you admit what you don’t know. Marcel: be open to receive from others, including thanks and help.",rat:"After a big event, Emilio doesn’t claim to understand it all. He stays open and says he can still learn. That humility is the first step of doing philosophy: question before concluding.",tr:"Write one thing you assumed you knew but never questioned."},
+{t:"Song of the Cats at Night",h:235,v:["🐱","🎒","🚪"],ph:"Existentialism: Authentic Choice",top:"Freedom: Commitment",who:["Søren Kierkegaard","Jean-Paul Sartre"],line:"I won’t cry now. What matters is that I’m going!",ev:"Emilio packs and prepares to leave his village and his cats for Davao.",qn:"What must I give up to grow?",idea:"Kierkegaard: a leap is commitment without full certainty. Sartre: authenticity means owning your choice instead of blaming circumstances.",rat:"Staying is safe. Leaving is uncertain and it costs something. Emilio’s tears and his decision show that real choice has a price, and he commits anyway.",tr:"What comfort zone is getting too small for you?"},
+{t:"The Last Words in the Dark",h:35,v:["👴🏽","🤗","🌳"],ph:"Filipino Philosophy: Kapwa and Roots",top:"Human Person in Society",who:["Virgilio Enriquez"],line:"The dust of Isidro will make you strong.",ev:"Grandpa Piro gives Emilio three reminders and a little money. The pencil is to keep his roots close.",qn:"Where do I come from and what do I carry?",idea:"Enriquez: kapwa is the “shared self.” Filipino identity is built through relationships, not isolation.",rat:"Lolo’s words show identity as inherited relationship, values passed from person to person. Emilio leaves as one person but carries a “we.” The city will test that.",tr:"Name one value someone passed on to you."},
+{t:"The City",h:215,v:["🌆","😶","💧"],ph:"Social Philosophy: Alienation",top:"Human Person in Society",who:["Karl Marx","Martin Heidegger"],line:"Like a drop of rain falling into the ocean.",ev:"In Davao, Emilio is surrounded by people yet no one knows him.",qn:"Why can a crowd feel lonely?",idea:"Marx: alienation separates people from their work, each other and themselves. Heidegger: we drift into “the They,” doing what everyone does.",rat:"The city is the story’s lab for alienation: crowds without contact and speed without meaning. Emilio’s loneliness isn’t weakness. It is a symptom of a place that treats people like units.",tr:"Where do you feel like one of the crowd (school, social media)?"},
+{t:"The Meeting of “I and You”",h:340,v:["📱","🤝","❤️"],ph:"Dialogical Philosophy and Personalism",top:"Intersubjectivity",who:["Martin Buber","Emmanuel Levinas","Gabriel Marcel"],line:"He isn’t a grain of sand in the sea. He is part of everything.",ev:"Maria explains two ways of seeing others: I–It (use them) and I–You (see a person).",qn:"How should I see other people?",idea:"Buber: I–It treats others as things to use. I–You meets them as whole persons. Levinas: the other’s face makes an ethical demand on you.",rat:"This is the chapter where the story names the idea. Emilio then tests it against memory: Lolo, Aling Susan, the child. Theory becomes recognition, which is how stories turn concepts into understanding.",tr:"Who in your life do you treat as an “It”? What would change if you saw a “You”?"},
+{t:"The Philosophy of Working the Land",h:150,v:["♻️","🌱","🤝"],ph:"Environmental Ethics and Forgiveness",top:"Human Person in the Environment",who:["Aldo Leopold","Martin Heidegger","Hannah Arendt"],line:"Not every failure means the seed was useless.",ev:"Emilio builds a garden from old tires, buckets and bottles. Marco comes to help.",qn:"What gives things, and people, their value?",idea:"Leopold: land is a community, not property. Heidegger: dwelling is caring so things can flourish. Arendt: forgiveness frees us, and we can always begin again.",rat:"Discarded items get new worth, just like the broken bond with Marco. Caring for soil and caring for people turn out to be one ethic.",tr:"What thrown-away thing or person deserves a second chance?"},
+{t:"The Harvest of Character",h:48,v:["🎓","🌾","🧑🏽‍🌾"],ph:"Virtue Ethics and Eudaimonia",top:"Meaning of Human Existence",who:["Aristotle"],line:"A seed doesn’t know if it will grow. But it was planted anyway.",ev:"Emilio graduates. He isn’t top of the class, and the story still treats it as a victory.",qn:"What does success really mean?",idea:"Aristotle: eudaimonia is flourishing through virtue practiced over time, not status.",rat:"The harvest isn’t medals. It is the person Emilio became: persistent, caring, honest. The story redefines success as character.",tr:"How do you define success apart from grades?"},
+{t:"Epilogue",h:285,v:["❓","🌱","✨"],ph:"Existential Meaning",top:"Meaning of Human Existence",who:["Viktor Frankl","Gabriel Marcel"],line:"If life is the question, you are the answer.",ev:"The story closes by inviting the reader to keep testing and keep planting.",qn:"What is life asking of me?",idea:"Frankl: life asks us, and we answer through responsibility. Marcel: life is a mystery to be lived.",rat:"“Testing lang gud” is a lived philosophy: act under uncertainty, learn, then act again. The story is the proof of concept.",tr:"Finish this sentence: “My answer to life today is…”"}];
+var TK=["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","ep"],cur=0,vw="journey";
+function lab(i){return i<11?"Chapter "+(i+1):"Epilogue"}
+function go(v,i){vw=v;if(i!=null)cur=i;try{location.hash=v==="chapter"?TK[cur]:v}catch(e){}render()}
+function render(){var c=CH[cur];document.documentElement.style.setProperty("--h",vw==="chapter"?c.h:270);
+var T=[["journey","🗺️ Journey"],["chapter","📖 Chapter"],["thinkers","🏛️ Thinkers"]];
+document.getElementById("tabs").innerHTML=T.map(function(x){return '<button class="tab" aria-current="'+(x[0]===vw)+'" onclick="go(\''+x[0]+'\')">'+x[1]+'</button>'}).join("");
+document.getElementById("chips").innerHTML=vw==="chapter"?CH.map(function(x,i){return '<button class="chip" aria-current="'+(i===cur)+'" onclick="go(\'chapter\','+i+')">'+(i<11?i+1:"Epi")+'</button>'}).join(""):"";
+var h="";
+if(vw==="journey"){h='<div class="grid">'+CH.map(function(x,i){return '<button class="tile" style="--t:'+x.h+'" onclick="go(\'chapter\','+i+')"><span class="n">'+lab(i).toUpperCase()+'</span><div class="e">'+x.v.join(" ")+'</div><b>'+x.t+'</b><small>'+x.ph+'<br>'+x.top+'<br><i>'+x.who.join(", ")+'</i></small></button>'}).join("")+'</div>'}
+else if(vw==="thinkers"){h='<div class="wrap"><table><tr><th>Thinker</th><th>Core idea in plain words</th><th>Chapters</th></tr>'+Object.keys(P).map(function(n){var k=[];CH.forEach(function(x,i){if(x.who.indexOf(n)>=0)k.push(i<11?i+1:"Epi")});return '<tr><td><b>'+n+'</b></td><td>'+P[n]+'</td><td>'+k.join(", ")+'</td></tr>'}).join("")+'</table></div>'}
+else{var L=["STORY","IDEA","YOU"];
+h='<article class="card"><div class="k">'+lab(cur)+' · '+c.top+'</div><h2>'+c.t+'</h2><div class="bridge">'+c.v.map(function(e,i){return '<div class="bn"><div class="e">'+e+'</div><p>'+L[i]+'</p></div>'+(i<2?'<div class="ar">→</div>':'')}).join("")+'</div>'
++'<p class="quote">“'+c.line+'”</p>'
++'<div class="sec"><h3>What happens</h3><p>'+c.ev+'</p></div>'
++'<div class="sec"><h3>The question it raises</h3><p><b>'+c.qn+'</b></p></div>'
++'<div class="sec"><h3>The philosophy</h3><span class="tag">'+c.ph+'</span><p style="margin-top:6px">'+c.idea+'</p>'+c.who.map(function(n){return '<div class="th"><b>'+n+'</b><br>'+P[n]+'</div>'}).join("")+'</div>'
++'<div class="sec"><h3>How the story becomes the philosophy</h3><p>'+c.rat+'</p></div>'
++'<div class="try">🧠 Try it: '+c.tr+'</div></article>'
++'<div class="prog"><i style="width:'+((cur+1)/12*100)+'%"></i></div><div class="nav"><button '+(cur===0?'disabled':'')+' onclick="go(\'chapter\','+(cur-1)+')">← Back</button><button '+(cur===11?'disabled':'')+' onclick="go(\'chapter\','+(cur+1)+')">Next →</button></div>'}
+document.getElementById("view").innerHTML=h;var a=document.querySelector('.chip[aria-current="true"]');if(a&&a.scrollIntoView)a.scrollIntoView({block:"nearest",inline:"center"})}
+var hs=(location.hash||"").slice(1),ix=TK.indexOf(hs);if(ix>=0){cur=ix;vw="chapter"}else if(hs==="thinkers")vw="thinkers";
+render();
+</script><script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script></body></html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Testing Lang Gud — Story</title>
+<style>
+:root{--bg:#f6ecd9;--card:#fffaf0;--ink:#2b1d14;--mute:#6b5646;--gold:#c98a0b;--green:#3f7a2e;--fire:#c9461f;--line:#e4d3b3;--hl:#fbe9b7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1510;--card:#2b1d14;--ink:#f6ecd9;--mute:#c9b79c;--gold:#e8b030;--green:#7fc26a;--fire:#ef7a52;--line:#4a3526;--hl:#463216}}
+:root[data-theme="dark"]{--bg:#1f1510;--card:#2b1d14;--ink:#f6ecd9;--mute:#c9b79c;--gold:#e8b030;--green:#7fc26a;--fire:#ef7a52;--line:#4a3526;--hl:#463216}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Trebuchet MS',Verdana,sans-serif;line-height:1.5}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:28px;margin:0;line-height:1.15}
+.sub{color:var(--mute);margin:4px 0 16px}
+.arc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 8px 4px;overflow-x:auto}
+.arc svg{display:block;min-width:560px;width:100%}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:15px;cursor:pointer}
+.chip[aria-current="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.kicker{color:var(--gold);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+h2{font-size:26px;margin:4px 0 14px;line-height:1.2}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:18px}
+.panel{background:var(--hl);border-radius:16px;padding:14px 8px;text-align:center;animation:pop .4s both}
+.panel .e{font-size:54px;line-height:1.1}
+.panel p{margin:6px 0 0;font-size:15px;font-weight:700}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+h3{font-size:16px;margin:16px 0 4px;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}
+.beat{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:4px 12px;font-weight:700;font-size:15px}
+blockquote{margin:8px 0 0;padding:14px 16px;background:var(--hl);border-left:6px solid var(--gold);border-radius:8px;font-size:19px;font-style:italic}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.nav button{flex:1;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--ink);color:var(--bg);font:inherit;font-weight:700;cursor:pointer}
+.nav button:disabled{opacity:.35}
+.txt p{margin:0 0 14px;font-size:18px;line-height:1.75}.txt{max-height:none}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2b1d14"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Testing Lang Gud"></head><body><main>
+<h1>🌽 Testing Lang Gud</h1>
+<p class="sub">Ang binhi, di alam kung tutubo. Pero itinanim pa rin.</p>
+<div class="arc" id="arc" aria-label="Plot arc ng kuwento"></div>
+<div class="chips" id="chips"></div>
+<article class="card" id="card"></article>
+<a href="explainer.html" style="display:block;margin:0 0 14px;padding:14px 16px;border-radius:14px;background:var(--green);color:#fff;text-align:center;font-weight:700;text-decoration:none">Next: Philosophy Explainer 🧠 →</a><div class="nav"><button id="prev">← Balik</button><button id="next">Sunod →</button></div>
+<a href="explainer.html" style="display:block;margin-top:18px;padding:14px 16px;border-radius:14px;background:var(--green);color:#fff;text-align:center;font-weight:700;text-decoration:none">Next: Philosophy Explainer 🧠 →</a></main>
+<script src="story-data.js"></script>
+<script>
+var CH=[
+{t:"Ang Alabok ng San Isidro",b:"Pagpakilala",h:2,p:[["🥾","5 km ang lakad"],["🐱","Mga pusa"],["🏫","May pagsusulit"],["✊","Dili pa tapos"]],s:"Si Emilio naglakaw ug lima ka kilometro kada adlaw padulong sa eskwela. Gamay ang iyang gamit, apan dili siya mosuko bisan nahadlok.",q:"Ang alikabok sa sapatos ay hindi depinisyon ng kanyang bukas."},
+{t:"Ang Liso at ang Lapis",b:"Pagsugod sa aral",h:3,p:[["🌅","Alas-4:30"],["🌽","Magtanim"],["❓","Tutubo ba?"],["✏️","Lapis ni Lolo"]],s:"Gipakita ni Lolo Piro nga ang pagtanom kay walay kasiguruhan. Gihatag niya ang mubo nga lapis: makasulat gihapon ug bag-ong istorya.",q:"Kung nagtanum ka — may pag-asa."},
+{t:"Ang Hangin ng Pangamba",b:"Tunggalian",h:5,p:[["🏠","Bahay-kubo"],["😂","Gitawanan"],["🗣️","Nagsulti si Emilio"],["💥","Pagsabog!"]],s:"Gitawanan ni Marco ang proyekto ni Emilio. Nagpabilin siyang kalmado ug matatag, ug niingon nga “testing ra ni”. Sa pag-uli, may sunog.",q:"Testing ra ni. Kung mapalpak ko karon, buhaton ra nako pag-usab."},
+{t:"Ang Pagsubok sa Apoy",b:"Kasukdulan",h:8,p:[["🔥","Sunog"],["👶","Bata sa sulod"],["🏃🏽","Misulod siya"],["🤝","Baryo nagtabang"]],s:"Walay moduol sa nagdilaab nga balay. Misulod si Emilio, giluwas ang bata, ug nakita nga ang tinuod nga tubag kay pagtinabangay sa tanan.",q:"Ang tapang ay paghakbang kahit nanginginig ang tuhod."},
+{t:"Ang Katahimikan ng Pagkilala",b:"Pagninilay",h:6,p:[["🍞","Jessa"],["🌽","Nasunog ang maisan"],["💛","Salamat, Aling Susan"],["✏️","Isinulat niya"]],s:"Nahibal-an ni Emilio nga dili siya nag-inusara sa paghagit. Nasunog ang katunga sa maisan, apan wala siya magsisi nga gipili ang kinabuhi.",q:"Dili pa ko kabalo. Pero makat-on pa ko."},
+{t:"Ang Awit ng mga Pusa sa Gabi",b:"Paghanda",h:4.5,p:[["🐱","Pamilya niya"],["🎒","Pag-impake"],["😢","Kahadlok sa Davao"],["🌙","Moadto ko"]],s:"Gihanda ni Emilio ang gamit sa pag-adto sa Davao. Nahadlok pa siya, apan nahibal-an niya nga ang dili pagsulay ang hinungdan sa kawalay kasiguruhan.",q:"Dili nako muhilak karon oi. Ang importante — moadto ko!"},
+{t:"Ang Habilin sa Dilim",b:"Ang habilin",h:5.5,p:[["💰","Ayaw salig"],["🍚","Kaon kanunay"],["🏡","Hinumdomi ang Isidro"],["🤗","Mahigpit nga yakap"]],s:"Gihatagan ni Lolo Piro si Emilio ug tulo ka habilin ug gamay nga kwarta. Ang lapis kay para dili makalimot kung asa gikan ang ugat.",q:"Ang abog sa Isidro — mao na ang magpapatibay sayo."},
+{t:"Ang Lungsod",b:"Bag-ong dapit",h:3.5,p:[["🚌","Miabot sa Davao"],["🌆","Ingay ug dagan"],["💧","Patak sa dagat"],["👩🏽","Nakilala si Maria"]],s:"Gibati ni Emilio nga walay nakakilala kaniya sa lungsod. Si Maria nakigsulti ug gibuksan ang iyang panan-aw sa mga tawo.",q:"Para siyang isang patak ng ulan na bumagsak sa karagatan."},
+{t:"Ang Pagtagpo ng “Ako at Ikaw”",b:"Pilosopikal nga kasukdulan",h:8.5,p:[["📱","Ako-Bagay"],["🤝","Ako-Ikaw"],["🌃","Mga ilaw sa lungsod"],["💡","Konektado"]],s:"Gitudlo ni Maria nga ang kapwa kay dili bagay nga gamiton kondili tawo nga naay kaugalingong istorya. Dili na mag-inusara si Emilio.",q:"Hindi siya butil sa dagat. Usa siya ka bahin sa tanan."},
+{t:"Ang Pilosopiya ng Paggawa sa Lupa",b:"Pagbag-o",h:6.5,p:[["🌱","Unity Garden"],["🥀","Nalanta"],["🔧","Giusab"],["🤝","Si Marco"]],s:"Nagsugod si Emilio ug gulayan gamit ang daan nga gamit. Nalanta ang uban, apan nakat-on sila. Mitabang si Marco ug nagbag-o ang ilang relasyon.",q:"Dili tanan kapakyasan tungod kay walay pulos ang binhi."},
+{t:"Ang Pag-Ani Ng Pagkatao",b:"Wakas",h:3,p:[["🎓","Graduation"],["👴🏽","Mapasigarbuhon si Lolo"],["🌽","Bag-ong tanom"],["🐱","Mga pusa"]],s:"Nakatapos si Emilio. Wala siya sa taas sa klase, apan nahibal-an niya nga ang tinuod nga kaisog kay ang pagpadayon bisan walay kasiguruhan.",q:"Ang binhi ay hindi alam kung tutubo. Pero itinanim pa rin."},
+{t:"Epilogo",b:"Aral",h:2,p:[["❓","Pagsulay"],["🌱","Pag-asa"],["💪","Pagbangon"],["✨","Ikaw ang tubag"]],s:"Ang buhay kay dili pagsulit nga naay tubag na. Ang takot nagahulat ug kasiguruhan, ang paglaum nagatanom bisan ngitngit pa.",q:"Kung ang buhay ang katanungan, ikaw ang sagot."}
+];
+var tokens=["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","ep"],cur=0;
+function lab(i){return i<11?"Kab. "+(i+1):"Epilogo"}
+function drawArc(){var W=600,H=120,pts=CH.map(function(c,i){return [30+i*(W-60)/11,H-14-c.h*10.5]});
+var d=pts.map(function(p){return p.join(",")}).join(" ");
+var s='<svg viewBox="0 0 '+W+' '+H+'"><polyline points="'+d+'" fill="none" stroke="var(--line)" stroke-width="4"/>';
+pts.forEach(function(p,i){var on=i===cur;s+='<g style="cursor:pointer" onclick="go('+i+')"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(on?11:7)+'" fill="'+(on?'var(--fire)':'var(--gold)')+'"/><text x="'+p[0]+'" y="'+(H-1)+'" text-anchor="middle" font-size="11" fill="var(--mute)">'+(i<11?i+1:"E")+'</text></g>'});
+document.getElementById("arc").innerHTML=s+'</svg>'}
+function render(){var c=CH[cur];
+document.getElementById("chips").innerHTML=CH.map(function(x,i){return '<button class="chip" aria-current="'+(i===cur)+'" onclick="go('+i+')">'+lab(i)+'</button>'}).join("");
+var pan=c.p.map(function(p,i){return '<div class="panel" style="animation-delay:'+i*90+'ms"><div class="e">'+p[0]+'</div><p>'+p[1]+'</p></div>'}).join("");
+document.getElementById("card").innerHTML='<div class="kicker">'+lab(cur)+'</div><h2>'+c.t+'</h2><div class="panels">'+pan+'</div><h3>📖 Basaha ang kabanata</h3><div class="txt">'+TEXT[cur]+'</div><h3>Kwento</h3><p>'+c.s+'</p><h3>Pangunang plot</h3><span class="beat">'+c.b+'</span><h3>Highlight</h3><blockquote>“'+c.q+'”</blockquote>';
+document.getElementById("prev").disabled=cur===0;document.getElementById("next").disabled=cur===CH.length-1;drawArc();
+var ch=document.querySelector('.chip[aria-current="true"]');if(ch&&ch.scrollIntoView)ch.scrollIntoView({block:"nearest",inline:"center"})}
+function go(i){cur=Math.max(0,Math.min(CH.length-1,i));try{location.hash=tokens[cur]}catch(e){}render();window.scrollTo(0,0)}
+document.getElementById("prev").onclick=function(){go(cur-1)};document.getElementById("next").onclick=function(){go(cur+1)};
+document.addEventListener("keydown",function(e){if(e.key==="ArrowRight")go(cur+1);if(e.key==="ArrowLeft")go(cur-1)});
+var hx=tokens.indexOf((location.hash||"").slice(1));if(hx>=0)cur=hx;render();
+</script><script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script></body></html>
